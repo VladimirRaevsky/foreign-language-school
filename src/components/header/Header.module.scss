@@ -1,0 +1,26 @@
+@import '../../scss/mixins';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &__logo {
+    cursor: pointer;
+  }
+
+  &__button {
+    width: 215px;
+  }
+
+  .nav__list {
+    display: flex;
+  }
+  .nav__item {
+  }
+  .nav__link {
+    @include fzRem(14px);
+    font-weight: 400;
+    line-height: 13px;
+  }
+}
