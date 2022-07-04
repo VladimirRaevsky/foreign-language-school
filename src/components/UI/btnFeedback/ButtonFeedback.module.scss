@@ -24,8 +24,7 @@
   transition-duration: 0.3s, 0.5s, 0.5s;
   transition-timing-function: ease, ease, ease;
 
-
-  div {
+  .imageWrapp {
     background: linear-gradient(213.88deg, #b1e2ff -67.78%, #68c7ff 175.48%);
     width: 38px;
     height: 38px;
@@ -37,8 +36,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 
     img {
       width: 16px;
@@ -55,7 +52,9 @@
     transition-property: color, background, filter;
     transition-duration: 0.3s, 0.5s, 0.5s;
     transition-timing-function: ease, ease, ease;
-
+  }
+  &:hover .imageWrapp {
+    background: inherit;
   }
 
   &:focus {
@@ -65,6 +64,8 @@
     transition-property: color, background, filter;
     transition-duration: 0.3s, 0.5s, 0.5s;
     transition-timing-function: ease, ease, ease;
-
+  }
+  &:focus .imageWrapp {
+    background: inherit;
   }
 }

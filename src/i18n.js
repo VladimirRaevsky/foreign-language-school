@@ -14,11 +14,11 @@ i18n
   .init({
     fallbackLng: 'ru',
     supportedLngs: ['ru', 'uk'],
-    debug: true,
+    debug: false,
 
     detection: {
-      order: ['cookie'],
-      caches: ['cookie'],
+      order: ['localStorage'],
+      caches: ['localStorage'],
     },
     interpolation: {
       escapeValue: false,
